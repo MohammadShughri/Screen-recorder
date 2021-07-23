@@ -40,6 +40,23 @@
         {
           "name": "@electron-forge/maker-rpm",
           "config": {}
+        },
+        {
+          "config": {
+            "forge": {
+              "publishers": [
+                {
+                  "name": "@electron-forge/publisher-github",
+                  "config": {
+                    "repository": {
+                      "owner": "MohammadShughri",
+                      "name": "Screen-recorder"
+                    }
+                  }
+                }
+              ]
+            }
+          }
         }
       ]
     }
@@ -53,6 +70,7 @@
     "@electron-forge/maker-rpm": "^6.0.0-beta.58",
     "@electron-forge/maker-squirrel": "^6.0.0-beta.58",
     "@electron-forge/maker-zip": "^6.0.0-beta.58",
+    "@electron-forge/publisher-github": "^6.0.0-beta.58",
     "electron": "13.1.7"
   }
 }
