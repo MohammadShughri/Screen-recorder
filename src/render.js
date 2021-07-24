@@ -6,12 +6,6 @@ const { dialog, Menu } = remote;
 let mediaRecorder; // MediaRecorder instance to capture footage
 const recordedChunks = [];
 
-const autoUpdater = require("electron-updater");
-
-app.on("ready", () => {
-  autoUpdater.checkForUpdatesAndNotify();
-});
-
 const videoElement = document.querySelector("video");
 
 const startBtn = document.getElementById("startBtn");

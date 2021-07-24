@@ -1,32 +1,31 @@
 {
-  "name": "my-app",
-  "productName": "my-app",
+  "name": "screen-recorder",
+  "productName": "screen-recorder",
   "version": "1.0.0",
-  "description": "My Electron application description",
+  "description": "Awesome screen recorder",
   "main": "src/index.js",
   "build": {
-		"appId": "com.my-app.my-app",
-		"productName": "my-app",
-		"mac": {
-			"category": "public.app-category.lifestyle"
-		},
-		"dmg": {
-			"icon": false
-		},
-		"linux": {
-			"target": ["AppImage"],
-			"category": "Office"
-		}
-	},
+    "appId": "com.screen-recorder.screen-recorder",
+    "productName": "screen-recorder",
+    "mac": {
+      "category": "public.app-category.lifestyle"
+    },
+    "dmg": {
+      "icon": false
+    },
+    "linux": {
+      "target": [
+        "AppImage"
+      ],
+      "category": "Office"
+    }
+  },
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",
     "make": "electron-forge make",
     "publish": "electron-forge publish",
-    "lint": "echo \"No linting configured\"",
-    "postinstall": "electron-builder install-app-deps",
-    "build": "electron-builder --mac --windows --linux",
-    "release": "electron-builder --mac --windows --linux --publish always"
+    "lint": "echo \"No linting configured\""
   },
   "keywords": [],
   "author": {
